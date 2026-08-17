@@ -1,0 +1,32 @@
+{
+  "docs": [
+    {
+      "uuid": "38b8e69c-3fdb-445a-88ad-2ed89d462511",
+      "slug": "installation",
+      "path": "docs/INSTALLATION.md",
+      "title": "Installing Sather locally",
+      "blurb": "Learn how to install Sather locally to solve Exercism's exercises on your own machine"
+    },
+    {
+      "uuid": "055624c1-5f47-42f9-80ce-bfb7fb5d0de1",
+      "slug": "learning",
+      "path": "docs/LEARNING.md",
+      "title": "How to learn Sather",
+      "blurb": "An overview of how to get started from scratch with Sather"
+    },
+    {
+      "uuid": "28dae689-9700-413c-9ba6-62a0d2ac29f2",
+      "slug": "tests",
+      "path": "docs/TESTS.md",
+      "title": "Testing on the Sather track",
+      "blurb": "Learn how to test your Sather exercises on Exercism"
+    },
+    {
+      "uuid": "109f6a09-bc2c-4b75-939a-3da217e2c19e",
+      "slug": "resources",
+      "path": "docs/RESOURCES.md",
+      "title": "Useful Sather resources",
+      "blurb": "A collection of useful resources to help you master Sather"
+    }
+  ]
+}
