@@ -489,7 +489,38 @@
       "name": "Exact Numbers"
     }
   ],
-  "key_features": [],
+  "key_features": [
+    {
+      "title": "Efficient",
+      "content": "Compiles to C, and was designed to match hand-written C without giving up safety.",
+      "icon": "fast"
+    },
+    {
+      "title": "Iterators",
+      "content": "Iters are control structures you write yourself, yielding values back into a loop.",
+      "icon": "functional"
+    },
+    {
+      "title": "Include, not inherit",
+      "content": "Subtyping and code reuse are separate. Abstract classes do one, include does the other.",
+      "icon": "extensible"
+    },
+    {
+      "title": "Design by contract",
+      "content": "Routines carry pre and post conditions, and classes carry invariants, all checkable.",
+      "icon": "safe"
+    },
+    {
+      "title": "Garbage collected",
+      "content": "Collected, but with nothing implicitly constructed behind the programmer's back.",
+      "icon": "garbage-collected"
+    },
+    {
+      "title": "Strongly typed",
+      "content": "No implicit conversions, and a clear split between reference and value objects.",
+      "icon": "statically-typed"
+    }
+  ],
   "tags": [
     "execution_mode/compiled",
     "paradigm/imperative",
