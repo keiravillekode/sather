@@ -1,5 +1,26 @@
 class WARM_UP_LAPS is
 
-   -- Write your routines between here and the end of the class.
+   distance_run(laps : INT) : INT is
+      distance ::= 0;
+      lap ::= 0;
+      length ::= 100;
+      loop
+         if lap = laps then
+            return distance;
+         end;
+
+         lap := lap + 1;
+         distance := length;
+         length := length + 10;
+      end;
+   end;
+
+   laps_to_reach(distance : INT) : INT is
+      return distance;
+   end;
+
+   first_long_lap(distance : INT) : INT is
+      return distance;
+   end;
 
 end; -- class WARM_UP_LAPS
