@@ -1,5 +1,23 @@
 class PROGRAMME_NOTES is
 
-   -- Write your routines between here and the end of the class.
+   full_title(piece, composer : STR) : STR is
+      return piece + " by " + composer;
+   end;
+
+   title_length(title : STR) : INT is
+      return title.size;
+   end;
+
+   opening_letters(title : STR, n : INT) : STR is
+      return title.head(n);
+   end;
+
+   closing_letters(title : STR, n : INT) : STR is
+      return title.tail(n);
+   end;
+
+   short_title(title : STR) : STR is
+      return title.head(6) + "...";
+   end;
 
 end; -- class PROGRAMME_NOTES
