@@ -10,7 +10,7 @@ class WARM_UP_LAPS is
          end;
 
          lap := lap + 1;
-         distance := length;
+         distance := distance + length;
          length := length + 10;
       end;
    end;

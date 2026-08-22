@@ -7,9 +7,9 @@ class WARM_UP_LAPS_TEST is
       test("no laps at all", WARM_UP_LAPS::distance_run(0), 0);
       test("one lap", WARM_UP_LAPS::distance_run(1), 100);
       test("two laps", WARM_UP_LAPS::distance_run(2), 210);
-      if false then
       test("three laps", WARM_UP_LAPS::distance_run(3), 330);
       test("a whole warm up", WARM_UP_LAPS::distance_run(10), 1450);
+      if false then
 
       test("no distance to cover", WARM_UP_LAPS::laps_to_reach(0), 0);
       test("less than one lap", WARM_UP_LAPS::laps_to_reach(50), 1);
