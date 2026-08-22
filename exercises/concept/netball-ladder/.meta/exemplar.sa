@@ -9,11 +9,11 @@ class NETBALL_LADDER is
    end;
 
    whole_quarters(minutes : INT) : INT is
-      return minutes / 4;
+      return minutes / 15;
    end;
 
    minutes_into_quarter(minutes : INT) : INT is
-      return minutes % 4;
+      return minutes % 15;
    end;
 
 end; -- class NETBALL_LADDER
