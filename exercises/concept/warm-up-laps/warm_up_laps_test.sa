@@ -9,16 +9,19 @@ class WARM_UP_LAPS_TEST is
       test("two laps", WARM_UP_LAPS::distance_run(2), 210);
       test("three laps", WARM_UP_LAPS::distance_run(3), 330);
       test("a whole warm up", WARM_UP_LAPS::distance_run(10), 1450);
-      if false then
 
       test("no distance to cover", WARM_UP_LAPS::laps_to_reach(0), 0);
       test("less than one lap", WARM_UP_LAPS::laps_to_reach(50), 1);
       test("exactly one lap", WARM_UP_LAPS::laps_to_reach(100), 1);
+
+
       test("one metre more than one lap",
            WARM_UP_LAPS::laps_to_reach(101), 2);
       test("exactly three laps", WARM_UP_LAPS::laps_to_reach(330), 3);
       test("one metre more than three laps",
            WARM_UP_LAPS::laps_to_reach(331), 4);
+
+      if false then
 
       test("the very first lap is over 50",
            WARM_UP_LAPS::first_long_lap(50), 1);
