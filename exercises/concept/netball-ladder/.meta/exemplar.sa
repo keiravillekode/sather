@@ -1,5 +1,19 @@
 class NETBALL_LADDER is
 
-   -- Write your routines between here and the end of the class.
+   ladder_points(wins : INT, draws : INT) : INT is
+      return 4 * wins + 2 * draws;
+   end;
+
+   goal_difference(goals_scored : INT, goals_let_in : INT) : INT is
+      return goals_scored - goals_let_in;
+   end;
+
+   whole_quarters(minutes : INT) : INT is
+      return minutes / 4;
+   end;
+
+   minutes_into_quarter(minutes : INT) : INT is
+      return minutes % 4;
+   end;
 
 end; -- class NETBALL_LADDER
