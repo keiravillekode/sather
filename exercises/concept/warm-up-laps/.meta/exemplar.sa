@@ -30,7 +30,16 @@ class WARM_UP_LAPS is
    end;
 
    first_long_lap(distance : INT) : INT is
-      return distance;
+      lap ::= 0;
+      length ::= 100;
+      loop
+         lap := lap + 1;
+         if length > distance then
+            return lap;
+         end;
+
+         length := length + 10;
+      end;
    end;
 
 end; -- class WARM_UP_LAPS

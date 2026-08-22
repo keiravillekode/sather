@@ -21,17 +21,16 @@ class WARM_UP_LAPS_TEST is
       test("one metre more than three laps",
            WARM_UP_LAPS::laps_to_reach(331), 4);
 
-      if false then
-
       test("the very first lap is over 50",
            WARM_UP_LAPS::first_long_lap(50), 1);
       test("lap 3 is the first over 115",
            WARM_UP_LAPS::first_long_lap(115), 3);
+
       test("100 is not over 100",
            WARM_UP_LAPS::first_long_lap(100), 2);
       test("a long way in",
            WARM_UP_LAPS::first_long_lap(195), 11);
-      end;
+
 
       finish;
    end;
