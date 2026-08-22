@@ -1,5 +1,22 @@
 class CIPHER_WHEEL is
+   is_letter(c : CHAR) : BOOL is
+      return c.is_alpha;
+   end;
 
-   -- Write your routines between here and the end of the class.
+   shout(c : CHAR) : CHAR is
+      return c.upper;
+   end;
+
+   code(c : CHAR) : INT is
+      return c.int;
+   end;
+
+   first_character(s : STR) : CHAR is
+      return s[0];
+   end;
+
+   turn(c : CHAR, shift : INT) : CHAR is
+      return ((c.int - 'a'.int + shift) % 26 + 'a'.int).char;
+   end;
 
 end; -- class CIPHER_WHEEL
