@@ -1,5 +1,23 @@
 class TUNING_THE_STRINGS is
 
-   -- Write your routines between here and the end of the class.
+   octave_up(freq : FLTD) : FLTD is
+      return 2.0d * freq;
+   end;
+
+   octave_down(freq : FLTD) : FLTD is
+      return 0.5d * freq;
+   end;
+
+   midpoint(freq1, freq2 : FLTD) : FLTD is
+      return 0.5d * (freq1 + freq2);
+   end;
+
+   beats_per_second(freq1, freq2 : FLTD) : FLTD is
+      return (freq1 - freq2).abs;
+   end;
+
+   minutes_each(minutes, players : INT) : FLTD is
+      return minutes.fltd / players.fltd;
+   end;
 
 end; -- class TUNING_THE_STRINGS
