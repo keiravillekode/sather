@@ -1,5 +1,48 @@
 class BIRD_SURVEY is
 
-   -- Write your routines between here and the end of the class.
+   total_seen(counts : ARRAY{INT}) : INT is
+      result ::= 0;
+      loop
+         result := result + counts.elt!;
+      end;
+      return result;
+   end;
+
+   busiest_day(counts : ARRAY{INT}) : INT is
+      result ::= 0;
+      current ::= 0;
+      loop
+         current := counts.elt!;
+         if result < current then
+            result := current;
+         end;
+      end;
+      return result;
+   end;
+
+   days_over(counts : ARRAY{INT}, n : INT) : INT is
+      result ::= 0;
+      loop
+         if n < counts.elt! then
+            result := result + 1;
+         end;
+      end;
+      return result;
+   end;
+
+   hides_to_check(days : INT) : INT is
+      return days * (days + 1) / 2;
+   end;
+
+   first_busy_day(counts : ARRAY{INT}, n : INT) : INT is
+      result ::= 0;
+      loop
+         if n < counts.elt! then
+            return result;
+         end;
+         result := result + 1;
+      end;
+      return -1;
+   end;
 
 end; -- class BIRD_SURVEY
