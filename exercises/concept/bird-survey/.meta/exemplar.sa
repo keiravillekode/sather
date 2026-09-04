@@ -1,24 +1,33 @@
 class BIRD_SURVEY is
 
    total_seen(counts : ARRAY{INT}) : INT is
-      result ::= 0;
+      total ::= 0;
+      i ::= 0;
       loop
-         result := result + counts.elt!;
+         until!(i >= counts.size);
+         total := total + counts[i];
+         i := i + 1;
       end;
-      return result;
+      return total;
    end;
 
    busiest_day(counts : ARRAY{INT}) : INT is
-      result ::= 0;
+      busiest ::= 0;
+      i ::= 0;
       current ::= 0;
       loop
+         until!(i >= counts.size);
+
          current := counts.elt!;
-         if result < current then
-            result := current;
+         if busiest < current then
+            busiest := current;
          end;
+
+         i := i + 1;
       end;
-      return result;
+      return busiest;
    end;
+
 
    days_over(counts : ARRAY{INT}, n : INT) : INT is
       result ::= 0;
