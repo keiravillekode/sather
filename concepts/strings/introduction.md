@@ -17,8 +17,8 @@ string is written between double quotes.
 "Jean" + " " + "Sibelius"      -- "Jean Sibelius"
 ```
 
-Nothing is put between them, so a space has to be asked for. Leaving it out
-gives `"JeanSibelius"`.
+Nothing is put between them, so a space has to be asked for. Leaving it
+out gives `"JeanSibelius"`.
 
 ## How long is it?
 
@@ -29,7 +29,7 @@ its type is `INT`.
 "Sibelius".size      -- 8
 ```
 
-There are no brackets after `.size`, the same as a routine that takes no
+There are no brackets after `.size`, the same as any routine that takes no
 arguments.
 
 ## Taking a piece

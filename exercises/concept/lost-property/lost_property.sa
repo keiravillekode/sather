@@ -1,8 +1,36 @@
 class LOST_BOX{T} is
 
-   -- Write create, claim, claimed, waiting, replace and describe between
-   -- here and the end of the class.
-   --
-   -- Task 5 needs the class header above changed. The instructions say how.
+   attr item : T;
+   readonly attr handed_in_by : STR;
+   readonly attr claimed : BOOL;
+
+   -- Replace each placeholder body with the real one.
+   -- Task 5 also needs the class header above changed; until then,
+   -- nothing is known about a T, so `describe' cannot ask it for a
+   -- string. The instructions say how.
+
+   create(thing : T, who : STR) : SAME is
+      -- Make a box holding the thing, noting who handed it in.
+      return new;
+   end;
+
+   claim is
+      -- Record that the owner has collected it.
+   end;
+
+   waiting : BOOL is
+      -- Is the box still waiting to be claimed?
+      return false;
+   end;
+
+   replace(thing : T) : T is
+      -- Put a new thing in the box and return the old one.
+      return thing;
+   end;
+
+   describe : STR is
+      -- Return the thing and who handed it in, written out.
+      return "";
+   end;
 
 end; -- class LOST_BOX{T}

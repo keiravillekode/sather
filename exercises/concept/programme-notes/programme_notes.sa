@@ -1,5 +1,30 @@
 class PROGRAMME_NOTES is
 
-   -- Write your routines between here and the end of the class.
+   -- Replace each placeholder body with the real one.
+
+   full_title(piece, composer : STR) : STR is
+      -- Return the piece, then " by ", then the composer.
+      return "";
+   end;
+
+   title_length(title : STR) : INT is
+      -- Return how long the title is.
+      return 0;
+   end;
+
+   opening_letters(title : STR, count : INT) : STR is
+      -- Return the first `count' letters of the title.
+      return "";
+   end;
+
+   closing_letters(title : STR, count : INT) : STR is
+      -- Return the last `count' letters of the title.
+      return "";
+   end;
+
+   short_title(title : STR) : STR is
+      -- Return the first six letters, with three dots after them.
+      return "";
+   end;
 
 end; -- class PROGRAMME_NOTES

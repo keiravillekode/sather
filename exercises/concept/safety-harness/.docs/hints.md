@@ -31,8 +31,8 @@
 ## 3. How full is it?
 
 - `pre load >= 0` and `post result >= 0`.
-- `load * 100 / limit`, in that order. Dividing first would throw everything
-  away, as it would in `tuning-the-strings`.
+- Multiply by 100 **before** dividing by the limit. Dividing first would
+  throw everything away, as it would in `tuning-the-strings`.
 
 ## 4. Is it safe?
 

@@ -4,13 +4,14 @@ You have been using iterators since `bird-survey`. Now you write one.
 
 ## yield
 
-An iterator looks like a routine with two differences: its name ends in `!`,
-and it hands over values with `yield` instead of `return`.
+An iterator looks like a routine with two differences: its name ends in
+`!`, and it hands over values with `yield` instead of `return`.
 
 ```sather
-   markers!(count : INT) : INT is
+   squares!(once count : INT) : INT is
       loop
-         yield 100 * 1.upto!(count);
+         n ::= 1.upto!(count);
+         yield n * n;
       end;
    end;
 ```
@@ -25,7 +26,7 @@ resumed.
 
 ```sather
    loop
-      #OUT + TRAIL::markers!(3) + " ";      -- 100 200 300
+      #OUT + MATHS::squares!(3) + " ";      -- 1 4 9
    end;
 ```
 
@@ -34,31 +35,33 @@ resumed.
 An iterator ends in either of two ways.
 
 **Running out.** When the iterator's own loop finishes, or the routine
-reaches its end, it is over — and the loop that called it ends immediately.
+reaches its end, it is over — and the loop that called it ends
+immediately.
 
 **quit.** `quit` ends it there and then, without yielding.
 
 ```sather
-   named!(names : ARRAY{STR}) : STR is
+   readings!(once temps : ARRAY{INT}) : INT is
       loop
-         name ::= names.elt!;
-         if name = "" then quit; end;
-         yield name;
+         t ::= temps.elt!;
+         -- A sensor that has come unplugged reads -300.
+         if t < -273 then quit; end;
+         yield t;
       end;
    end;
 ```
 
-That yields names until it meets an empty one, and stops. `quit` is to an
-iterator what `return` is to a routine, except that it carries no value —
-there is nothing left to hand over.
+That yields temperatures until it meets an impossible one, and stops.
+`quit` is to an iterator what `return` is to a routine, except that it
+carries no value — there is nothing left to hand over.
 
 ## once
 
-An argument marked `once` is worked out one time only, when the loop starts,
-rather than every time round:
+An argument marked `once` is worked out one time only, when the loop
+starts, rather than every time round:
 
 ```sather
-   markers!(once count : INT) : INT is
+   squares!(once count : INT) : INT is
 ```
 
 Use it for anything that does not change between turns, which is most
@@ -81,6 +84,7 @@ A bare `yield` hands over nothing and simply lets the loop go round.
 
 ## Where the position lives
 
-Each *place in the program* that calls an iterator keeps its own position —
-which is why calling the same iterator twice in one loop body walks it twice
-over. Now you can see why: the two calls are two separate paused routines.
+Each *place in the program* that calls an iterator keeps its own
+position — which is why calling the same iterator twice in one loop body
+walks it twice over. Now you can see why: the two calls are two separate
+paused routines.

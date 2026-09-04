@@ -1,5 +1,21 @@
 class MISSING_PROPS is
 
-   -- Write your routines between here and the end of the class.
+   -- Replace each placeholder body with the real one.
+
+   count_of(props : FMAP{STR,INT}, prop : STR) : INT is
+      -- Return how many we have, or raise if the prop is unknown.
+      return 0;
+   end;
+
+   take_one(props : FMAP{STR,INT}, prop : STR) : INT is
+      -- Return how many are left after taking one. Raise if there are
+      -- none to take, or the prop is unknown.
+      return 0;
+   end;
+
+   report(props : FMAP{STR,INT}, prop : STR) : STR is
+      -- Return "Took ..." on success, or the raised words otherwise.
+      return "";
+   end;
 
 end; -- class MISSING_PROPS

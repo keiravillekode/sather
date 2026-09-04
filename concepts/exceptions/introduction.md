@@ -1,8 +1,8 @@
 # Exceptions
 
 Some routines cannot answer. Asked for a prop that is not on the table,
-`count_of` has no number to give — and nought would be a lie, because nought
-means "we have none of those", not "there is no such thing".
+`count_of` has no number to give — and nought would be a lie, because
+nought means "we have none of those", not "there is no such thing".
 
 An **exception** is how a routine says it cannot answer.
 
@@ -20,7 +20,8 @@ An **exception** is how a routine says it cannot answer.
 ```
 
 Nothing after a `raise` runs. The routine does not return, so there is no
-answer to check and no way for the caller to carry on as though there were.
+answer to check, and no way for the caller to carry on as though there
+were one.
 
 The value raised is usually a string saying what went wrong.
 
@@ -41,14 +42,14 @@ If nothing raises, the part after `protect` runs and the `when` arm is
 skipped. If something raises, the rest of the `protect` part is abandoned
 and the matching `when` runs instead.
 
-`when $STR then` catches a raised string. `exception` is the value that was
-raised, available inside the arm.
+`when $STR then` catches a raised string. `exception` is the value that
+was raised, available inside the arm.
 
 ## Passing through
 
 A routine that does not catch an exception does not have to do anything
-about it. It travels outward, through every caller, until something catches
-it:
+about it. It travels outward, through every caller, until something
+catches it:
 
 ```sather
    take_one(props : FMAP{STR,INT}, prop : STR) : INT is
@@ -59,5 +60,5 @@ it:
 ```
 
 That is the point of exceptions. The routine that notices the problem and
-the routine that knows what to do about it are usually not the same routine,
-and everything in between can ignore it.
+the routine that knows what to do about it are usually not the same
+routine, and everything in between can ignore it.

@@ -1,9 +1,11 @@
 # Instructions
 
-The school lost property office keeps everything in boxes, and what goes in
-a box could be anything: a jumper, a number of things, a name.
+The school lost property office keeps everything in boxes, and what goes
+in a box could be anything: a jumper, a number of things, a name.
 
-Write a `LOST_BOX{T}` class. The stub gives you the class header.
+All five tasks go in the `LOST_BOX{T}` class. The stub gives you the class
+header, its attributes, and each routine with a placeholder body. Task 5
+also changes the header.
 
 ## 1. Take something in
 

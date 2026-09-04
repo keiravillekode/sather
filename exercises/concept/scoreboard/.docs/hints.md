@@ -2,8 +2,8 @@
 
 ## General
 
-- The stub already declares the four attributes. Write the routines below
-  them, inside the class.
+- The stub already declares the four attributes and every routine. Replace
+  the placeholder bodies.
 - Inside the class an attribute is used by name, with no object in front:
   `home_score`, not `board.home_score`.
 
@@ -15,8 +15,8 @@
 
 ## 2. Score a goal
 
-- These answer nothing, so they are declared with no `:` and no type at all:
-  `home_goal is`.
+- These answer nothing, so they are declared with no `:` and no type at
+  all: `home_goal is`.
 - The body is one line: add one to the score and put it back.
 
 ## 3. Read the board
@@ -26,8 +26,8 @@
 
 ## 4. Who is winning?
 
-- Three cases, and they are comparisons rather than fixed values, so this is
-  an `if` chain and not a `case`.
+- Three cases, and they are comparisons rather than fixed values, so this
+  is an `if` chain and not a `case`.
 - Check for the draw as one of the three, not as an afterthought.
 
 ## 5. How far ahead?

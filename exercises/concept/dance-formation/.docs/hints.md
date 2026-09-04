@@ -31,6 +31,6 @@
 
 - A running total and a loop, as in the previous exercise.
 - Count a position variable from `0` upwards, and end the loop with
-  `until!(i >= steps.size)`.
+  `until!` when it reaches the size.
 - Starting the total at `0` is what makes the empty row answer nought
   without any special handling.

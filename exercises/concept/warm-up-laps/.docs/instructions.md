@@ -1,8 +1,8 @@
 # Instructions
 
-Netball training starts with laps. The coach makes each lap a little longer
-than the last: the first is 100 metres, the second 110, the third 120, and
-so on, ten metres more each time.
+Netball training starts with laps. The coach makes each lap a little
+longer than the last: the first is 100 metres, the second 110, the third
+120, and so on, ten metres more each time.
 
 All three tasks go in the `WARM_UP_LAPS` class.
 

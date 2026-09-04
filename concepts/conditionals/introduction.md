@@ -1,7 +1,7 @@
 # Conditionals
 
-A **conditional** picks between two courses of action depending on whether
-something is true.
+A **conditional** picks between two courses of action, depending on
+whether something is true.
 
 ```sather
    verdict(score : INT) : STR is
@@ -34,9 +34,9 @@ false.
    end;
 ```
 
-The order matters. A score of `9` is caught by the first question and never
-reaches the second, even though `9 >= 5` is also true. Writing the tests in
-the wrong order is the usual way to get this wrong.
+The order matters. A score of `9` is caught by the first question and
+never reaches the second, even though `9 >= 5` is also true. Writing the
+questions in the wrong order is the usual way to get this wrong.
 
 It is spelled `elsif` — not `elseif`, and not `else if`.
 
@@ -50,5 +50,5 @@ It is spelled `elsif` — not `elseif`, and not `else if`.
    end;
 ```
 
-A routine that must return something needs every path to return, so in this
-exercise every `if` keeps its `else`.
+A routine that must return something needs every path to return, so in
+this exercise every `if` keeps its `else`.

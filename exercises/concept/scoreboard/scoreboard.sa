@@ -3,7 +3,34 @@ class SCOREBOARD is
    attr home_team, away_team : STR;
    attr home_score, away_score : INT;
 
-   -- Write create, home_goal, away_goal, summary, leader and margin
-   -- between here and the end of the class.
+   -- Replace each placeholder body with the real one.
+
+   create(home, away : STR) : SAME is
+      -- Make a new board for the two teams, with no goals yet.
+      return new;
+   end;
+
+   home_goal is
+      -- Record a goal for the home team.
+   end;
+
+   away_goal is
+      -- Record a goal for the away team.
+   end;
+
+   summary : STR is
+      -- Return the board written out, such as "Vixens 1 - 0 Magpies".
+      return "";
+   end;
+
+   leader : STR is
+      -- Return the team in front, or "Draw".
+      return "";
+   end;
+
+   margin : INT is
+      -- Return how far apart the scores are. Never negative.
+      return 0;
+   end;
 
 end; -- class SCOREBOARD

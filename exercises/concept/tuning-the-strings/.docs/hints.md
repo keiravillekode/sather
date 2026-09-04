@@ -22,12 +22,12 @@
 ## 4. How far out?
 
 - Subtract one from the other, then `.abs` to drop any minus sign.
-- Brackets again: `.abs` has to apply to the subtraction, so
-  `(played - target).abs`.
+- Brackets again: `.abs` has to apply to the subtraction, not just to the
+  right-hand side of it.
 
 ## 5. Sharing out practice
 
-- The two arguments are `INT`, and the answer is `FLTD`, so something has to
-  convert.
-- Convert both with `.fltd` **before** dividing. Dividing first would throw
-  the fraction away, and converting afterwards cannot get it back.
+- The two arguments are `INT`, and the answer is `FLTD`, so something has
+  to convert.
+- Convert both with `.fltd` **before** dividing. Dividing first would
+  throw the fraction away, and converting afterwards cannot get it back.

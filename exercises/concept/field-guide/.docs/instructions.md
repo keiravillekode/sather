@@ -1,7 +1,7 @@
 # Instructions
 
-You are keeping a field guide: a map from an animal's name to the habitat it
-lives in.
+You are keeping a field guide: a map from an animal's name to the habitat
+it lives in.
 
 All five tasks go in the `FIELD_GUIDE` class.
 
@@ -24,7 +24,14 @@ FIELD_GUIDE::habitat_of(guide, "moa")
 -- => "Unknown"
 ```
 
-## 3. Add an entry
+## 3. How many animals?
+
+```sather
+FIELD_GUIDE::entry_count(guide)
+-- => 3
+```
+
+## 4. Add an entry
 
 Return the guide with one more animal in it. An animal already listed has
 its habitat replaced.
@@ -34,15 +41,9 @@ FIELD_GUIDE::add_entry(guide, "wombat", "forest")
 -- => the guide, now with wombat in it
 ```
 
-Whatever this hands back is the guide to use from then on. Adding to a guide
-that is completely empty works and gives a guide with one animal in it.
-
-## 4. How many animals?
-
-```sather
-FIELD_GUIDE::entry_count(guide)
--- => 3
-```
+Whatever this hands back is the guide to use from then on. Adding to a
+guide that is completely empty works, and gives a guide with one animal in
+it.
 
 ## 5. Which habitats?
 

@@ -8,16 +8,17 @@
 
 ## 1. How far in total?
 
-- Start `total` at 0 and `lap` at 1.
-- End the loop with `until!(lap > laps)` at the top, so that nought laps
-  runs the body no times and leaves the total at 0.
-- Add the length of the lap to the total, then add 1 to `lap`. Forgetting
-  the second of those is what makes a loop run forever.
+- Start the total at 0 and the lap counter at 1.
+- End the loop with `until!` at the top, asking whether the counter is
+  past the number of laps. That way nought laps runs the body no times and
+  leaves the total at 0.
+- Add the length of the lap to the total, then add 1 to the counter.
+  Forgetting the second of those is what makes a loop run forever.
 
 ## 2. How many laps to cover a distance?
 
-- Again a running total, but this time the question is about the total
-  rather than the lap number: `until!(total >= metres)`.
+- Again a running total, but this time `until!` asks about the total
+  rather than the lap number.
 - Put it at the top. Then asking for 0 metres answers 0 laps without
   running a lap.
 - The answer is the lap counter when the loop ends.
@@ -27,4 +28,4 @@
 - Nothing is being added up here, so no running total is needed.
 - Test the length of the current lap, and `break!` out when it is over the
   distance asked about.
-- Whatever `lap` holds when the loop ends is the answer.
+- Whatever the counter holds when the loop ends is the answer.

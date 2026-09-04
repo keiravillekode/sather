@@ -1,5 +1,25 @@
 class REHEARSAL_SCRIPT is
 
-   -- Write your routines between here and the end of the class.
+   -- Replace each placeholder body with the real one.
+
+   repeat_cue(cue : STR, times : INT) : STR is
+      -- Return the cue repeated that many times.
+      return "";
+   end;
+
+   initials(names : ARRAY{STR}) : STR is
+      -- Return the first letter of each name, joined together.
+      return "";
+   end;
+
+   numbered_lines(lines : ARRAY{STR}) : STR is
+      -- Return the lines numbered from one, each on its own line.
+      return "";
+   end;
+
+   shout(line : STR) : STR is
+      -- Return the line in upper case.
+      return "";
+   end;
 
 end; -- class REHEARSAL_SCRIPT

@@ -1,5 +1,31 @@
 class FIELD_GUIDE is
 
-   -- Write your routines between here and the end of the class.
+   -- Replace each placeholder body with the real one.
+
+   is_listed(guide : FMAP{STR,STR}, animal : STR) : BOOL is
+      -- Is this animal in the guide?
+      return false;
+   end;
+
+   habitat_of(guide : FMAP{STR,STR}, animal : STR) : STR is
+      -- Return the animal's habitat, or "Unknown" if it is not listed.
+      return "";
+   end;
+
+   add_entry(guide : FMAP{STR,STR}, animal, habitat : STR)
+         : FMAP{STR,STR} is
+      -- Add the animal and return the guide to use from now on.
+      return #FMAP{STR,STR};
+   end;
+
+   entry_count(guide : FMAP{STR,STR}) : INT is
+      -- Return how many animals the guide lists.
+      return 0;
+   end;
+
+   all_habitats(guide : FMAP{STR,STR}) : FSET{STR} is
+      -- Return the set of habitats, each counted once.
+      return #FSET{STR};
+   end;
 
 end; -- class FIELD_GUIDE

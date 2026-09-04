@@ -1,7 +1,7 @@
 # Characters
 
-A **character** is a single letter, digit, space or mark. Sather's type for
-one is `CHAR`, and a character is written between single quotes.
+A **character** is a single letter, digit, space or mark. Sather's type
+for one is `CHAR`, and a character is written between single quotes.
 
 ```sather
    initial : CHAR is
@@ -14,8 +14,8 @@ Single quotes for one character, double quotes for a string. `'M'` and
 
 ## Characters out of a string
 
-A string is a row of characters, and square brackets reach one by position,
-counting from nought — the same as an array.
+A string is a row of characters, and square brackets reach one by
+position, counting from nought — the same as an array.
 
 ```sather
 "Marlowe"[0]      -- 'M'

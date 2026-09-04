@@ -1,5 +1,25 @@
 class STAGE_DIRECTIONS is
 
-   -- Write your routines between here and the end of the class.
+   -- Replace each placeholder body with the real one.
+
+   opening_line : STR is
+      -- Return the line that opens the show.
+      return "";
+   end;
+
+   interval_line : STR is
+      -- Return the line called at half time.
+      return "";
+   end;
+
+   closing_line : STR is
+      -- Return the line that closes the show.
+      return "";
+   end;
+
+   final_cue : STR is
+      -- Return the final cue, which is the same line as the close.
+      return "";
+   end;
 
 end; -- class STAGE_DIRECTIONS

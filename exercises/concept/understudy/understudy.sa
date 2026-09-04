@@ -1,6 +1,48 @@
 class UNDERSTUDY is
 
-   -- Write shout, whisper, rehearse, run_scene, understudy_for, repeat
-   -- and doubler between here and the end of the class.
+   -- Replace each placeholder body with the real one.
+
+   shout(line : STR) : STR is
+      -- Return the line in upper case.
+      return "";
+   end;
+
+   whisper(line : STR) : STR is
+      -- Return the line in lower case, with "..." either side.
+      return "";
+   end;
+
+   rehearse(line : STR, part : ROUT{STR}:STR) : STR is
+      -- Return the line delivered by the given part.
+      return "";
+   end;
+
+   run_scene(lines : ARRAY{STR}, part : ROUT{STR}:STR) : STR is
+      -- Return every line delivered by the part, joined with spaces.
+      return "";
+   end;
+
+   private unwritten(line : STR) : STR is
+      -- A stand-in part; delete it when your own bound routines are
+      -- written.
+      return "";
+   end;
+
+   understudy_for(style : STR) : ROUT{STR}:STR is
+      -- Return the shout part for "shout", the whisper part otherwise.
+      part : ROUT{STR}:STR := bind(unwritten(_));
+      return part;
+   end;
+
+   repeat(times : INT, line : STR) : STR is
+      -- Return the line said that many times over.
+      return "";
+   end;
+
+   doubler : ROUT{STR}:STR is
+      -- Return a part that says its line twice.
+      part : ROUT{STR}:STR := bind(unwritten(_));
+      return part;
+   end;
 
 end; -- class UNDERSTUDY

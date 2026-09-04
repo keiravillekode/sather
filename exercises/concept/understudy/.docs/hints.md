@@ -1,5 +1,11 @@
 # Hints
 
+## General
+
+- The stub's `unwritten` routine is a stand-in part, there only so that
+  the placeholders compile. Once tasks 4 and 5 bind real routines, delete
+  it.
+
 ## 1. Two ways of saying a line
 
 - `.upper` and `.lower` work on a whole string, not only a character.
@@ -9,9 +15,9 @@
 
 - The argument type is written `ROUT{STR}:STR` — the argument types in
   braces, the answer after the colon.
-- The body is one line: `return part.call(line);`
-- `rehearse` must not mention `shout` or `whisper`. Not knowing is the whole
-  point of taking a bound routine.
+- The body is one line, and it is a `.call`.
+- `rehearse` must not mention `shout` or `whisper`. Not knowing is the
+  whole point of taking a bound routine.
 
 ## 3. The whole scene
 
@@ -40,8 +46,8 @@
 
 - `repeat` itself is an ordinary routine: a loop, an `FSTR`, and
   `1.upto!(times)`.
-- `doubler` binds it with the number written out and the line left as a
-  hole: `bind(repeat(2, _))`. As in task 4, put it in a variable and return
-  that.
-- Only the `_` becomes an argument of the bound routine, which is why
-  `bind(repeat(2, _))` has type `ROUT{STR}:STR` and not `ROUT{INT,STR}:STR`.
+- `doubler` binds `repeat` with the number written out and the line left
+  as a hole, the way the introduction's `print_run` example does. As in
+  task 4, put it in a variable and return that.
+- Only the `_` becomes an argument of the bound routine, which is why the
+  bind has type `ROUT{STR}:STR` and not `ROUT{INT,STR}:STR`.

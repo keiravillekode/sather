@@ -2,9 +2,9 @@
 
 ## General
 
-- Every routine goes inside `class STAGE_DIRECTIONS is` and its matching
-  `end;`. The stub already has both — write between them.
-- Each routine ends with its own `end;`.
+- The stub already declares all four routines, each with a placeholder
+  body. Your work is to replace the placeholders.
+- Each routine ends with its own `end;`, and the class with one more.
 
 ## 1. Announce the start
 
@@ -24,6 +24,6 @@
 ## 4. Call the final cue
 
 - Do not write the text a third time.
-- Inside the same class you can use a routine by name, with no class name in
-  front and no brackets: `closing_line`.
+- Inside the same class you can use a routine by name, with no class name
+  in front and no brackets: `closing_line`.
 - `return` the result of that call.

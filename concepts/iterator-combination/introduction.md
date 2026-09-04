@@ -21,11 +21,13 @@ second with second.
 Not when the last one does. Not when all of them have. The first.
 
 So if `violin_one` holds four bars and `violin_two` holds two, the loop
-above runs **twice**. The third and fourth bars of the first part are never
-looked at, because by then the second part has nothing left to offer.
+above runs **twice**. The third and fourth bars of the first part are
+never looked at, because by then the second part has nothing left to
+offer.
 
-That is usually exactly what is wanted — pairing things up only makes sense
-while there are pairs — but it has to be known rather than discovered.
+That is usually exactly what is wanted — pairing things up only makes
+sense while there are pairs — but it has to be known rather than
+discovered.
 
 ## Counting alongside
 
@@ -36,8 +38,8 @@ An iterator that never runs out is useful precisely because of that rule.
 1.up!        -- 1, 2, 3, 4, ... and never ends
 ```
 
-On its own it would loop forever. Paired with one that does end, it numbers
-the values without ever deciding how far to count:
+On its own it would loop forever. Paired with one that does end, it
+numbers the values without ever deciding how far to count:
 
 ```sather
    loop
@@ -53,5 +55,5 @@ know how long the part is.
 ## Order does not matter
 
 The iterators are all asked once per turn, so it makes no difference which
-is written first. What matters is that each is asked exactly once — writing
-`part.elt!` twice in one turn takes two values instead of one.
+is written first. What matters is that each is asked exactly once —
+writing `part.elt!` twice in one turn takes two values instead of one.

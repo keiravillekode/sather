@@ -15,6 +15,36 @@ end; -- class TEAM
 
 class FINALS_LADDER is
 
-   -- Write your routines between here and the end of the class.
+   -- Replace each placeholder body with the real one.
+
+   higher(a, b : TEAM) : BOOL is
+      -- Does team `a' rank above team `b'?
+      return false;
+   end;
+
+   ladder(teams : ARRAY{TEAM}) : ARRAY{TEAM} is
+      -- Return the teams in ladder order, best first.
+      return teams;
+   end;
+
+   names(teams : ARRAY{TEAM}) : STR is
+      -- Return the team names joined with ", ".
+      return "";
+   end;
+
+   premiers(teams : ARRAY{TEAM}) : STR is
+      -- Return the name of the top team, or "" for no teams at all.
+      return "";
+   end;
+
+   shorter(a, b : STR) : BOOL is
+      -- Does word `a' come before word `b', shortest first?
+      return false;
+   end;
+
+   shortest_first(words : ARRAY{STR}) : ARRAY{STR} is
+      -- Return the words ordered shortest first.
+      return words;
+   end;
 
 end; -- class FINALS_LADDER

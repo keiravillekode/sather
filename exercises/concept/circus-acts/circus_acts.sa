@@ -4,4 +4,80 @@ abstract class $ACT is
    minutes : INT;
 end; -- abstract class $ACT
 
--- Write JUGGLING, TUMBLING, TRAPEZE and CIRCUS_ACTS below.
+-- Replace each placeholder body with the real one.
+
+class JUGGLING < $ACT is
+
+   create : SAME is
+      return new;
+   end;
+
+   name : STR is
+      -- Return "Juggling".
+      return "";
+   end;
+
+   minutes : INT is
+      -- Juggling runs for 5 minutes.
+      return 0;
+   end;
+
+end; -- class JUGGLING
+
+class TUMBLING < $ACT is
+
+   create : SAME is
+      return new;
+   end;
+
+   name : STR is
+      -- Return "Tumbling".
+      return "";
+   end;
+
+   minutes : INT is
+      -- Tumbling runs for 3 minutes.
+      return 0;
+   end;
+
+end; -- class TUMBLING
+
+class TRAPEZE < $ACT is
+
+   readonly attr height : INT;
+
+   create(metres : INT) : SAME is
+      -- Make a trapeze act at the given height.
+      return new;
+   end;
+
+   name : STR is
+      -- Return "Trapeze at " and the height, such as "Trapeze at 4m".
+      return "";
+   end;
+
+   minutes : INT is
+      -- Trapeze runs for 8 minutes.
+      return 0;
+   end;
+
+end; -- class TRAPEZE
+
+class CIRCUS_ACTS is
+
+   total_minutes(acts : ARRAY{$ACT}) : INT is
+      -- Return how long the whole show runs.
+      return 0;
+   end;
+
+   billing(acts : ARRAY{$ACT}) : STR is
+      -- Return every act's name, joined with ", ".
+      return "";
+   end;
+
+   longest(acts : ARRAY{$ACT}) : STR is
+      -- Return the name of the longest act.
+      return "";
+   end;
+
+end; -- class CIRCUS_ACTS

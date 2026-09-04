@@ -1,5 +1,20 @@
 class WARM_UP_LAPS is
 
-   -- Write your routines between here and the end of the class.
+   -- Replace each placeholder body with the real one.
+
+   distance_run(laps : INT) : INT is
+      -- Return the total distance covered in the given number of laps.
+      return 0;
+   end;
+
+   laps_to_reach(metres : INT) : INT is
+      -- Return how many laps it takes to cover the distance.
+      return 0;
+   end;
+
+   first_long_lap(metres : INT) : INT is
+      -- Return the number of the first lap longer than the distance.
+      return 0;
+   end;
 
 end; -- class WARM_UP_LAPS

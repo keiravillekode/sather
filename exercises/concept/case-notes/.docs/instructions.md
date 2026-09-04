@@ -15,34 +15,25 @@ notes.size
 -- => 0
 ```
 
-## 2. Write a clue down
+## 2. How many clues?
 
-Add a clue to the end of the notebook. This answers nothing — it changes the
-notebook it is given.
+```sather
+CASE_NOTES::clue_count(notes)
+-- => 0
+```
+
+## 3. Write a clue down
+
+Add a clue to the end of the notebook. This answers nothing — it changes
+the notebook it is given.
 
 ```sather
 CASE_NOTES::add_clue(notes, "muddy boots");
-notes.size
--- => 1
-```
-
-## 3. How many clues?
-
-```sather
 CASE_NOTES::clue_count(notes)
 -- => 1
 ```
 
-## 4. Rule one out
-
-Take the clue at a position out of the notebook. Everything after it moves
-up. This also answers nothing.
-
-```sather
-CASE_NOTES::rule_out(notes, 0);
-```
-
-## 5. Read the case back
+## 4. Read the case back
 
 Return every clue in the notebook, joined with `"; "`. An empty notebook
 reads as the empty string.
@@ -50,4 +41,13 @@ reads as the empty string.
 ```sather
 CASE_NOTES::summary(notes)
 -- => "muddy boots; broken window"
+```
+
+## 5. Rule one out
+
+Take the clue at a position out of the notebook. Everything after it moves
+up. This also answers nothing.
+
+```sather
+CASE_NOTES::rule_out(notes, 0);
 ```

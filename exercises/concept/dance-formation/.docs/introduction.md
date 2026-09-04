@@ -9,8 +9,8 @@ strings is `ARRAY{STR}`; an array of whole numbers is `ARRAY{INT}`.
    row : ARRAY{STR} := |"Mia", "Ana", "Ben"|;
 ```
 
-The values between the two `|` marks are the **array literal**. Sather works
-out the size from how many there are.
+The values between the two `|` marks are the **array literal**. Sather
+works out the size from how many there are.
 
 ## Getting a value out
 
@@ -33,7 +33,8 @@ the last one in a row of three is at `2`.
 row.size    -- 3
 ```
 
-Because counting starts at nought, the last position is always `.size - 1`:
+Because counting starts at nought, the last position is always
+`.size - 1`:
 
 ```sather
 row[row.size - 1]     -- "Ben"
@@ -45,8 +46,8 @@ rather than counting the values by eye.
 
 ## Walking through one
 
-An array and a loop go together. Count a variable up through the positions
-and use it to reach each value:
+An array and a loop go together. Count a variable up through the
+positions, and use it to reach each value:
 
 ```sather
    total ::= 0;

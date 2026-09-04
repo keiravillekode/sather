@@ -41,25 +41,26 @@ A `when` may list values, separated by commas:
    end;
 ```
 
-This works on whole numbers, characters and strings — anything that can be
-compared with `=`.
+This works on whole numbers, characters and strings — anything that can
+be compared with `=`.
 
 ## The else is not optional
 
-**A `case` that matches nothing and has no `else` is an error that stops the
-program when it happens.**
+**A `case` that matches nothing and has no `else` is an error that stops
+the program when it happens.**
 
 That is different from `if`, where leaving off the `else` simply means
 nothing happens. It is also different from most languages, where an
 unmatched `case` quietly does nothing.
 
 So every `case` needs an `else`, even when you are sure the `when` parts
-already cover every value. A fourth zone gets added later, the `case` is not
-updated to match, and the program stops on the first passenger who uses it.
+already cover every value. A fourth zone gets added later, the `case` is
+not updated to match, and the program stops on the first passenger who
+uses it.
 
 ## Only one when runs
 
-When a `when` matches, the statements after its `then` run and the `case` is
-finished — the program carries on after the `end`. The `when` parts below it
-are never looked at, so there is nothing you have to write to stop the next
-one from running as well.
+When a `when` matches, the statements after its `then` run and the `case`
+is finished — the program carries on after the `end`. The `when` parts
+below it are never looked at, so there is nothing you have to write to
+stop the next one from running as well.

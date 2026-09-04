@@ -4,34 +4,34 @@ Everything so far has passed *values* around: numbers, strings, objects. A
 **bound routine** lets you pass around a routine itself — something to be
 called later, by code that does not know what it is.
 
-An understudy is the idea exactly: the stage manager holds a way of playing
-the part, without knowing who it is or what they will do.
+An understudy is the idea exactly: the stage manager holds a way of
+playing the part, without knowing who it is or what they will do.
 
 ## Making one
 
 `bind` takes a call with holes in it, written `_`:
 
 ```sather
-   shout(line : STR) : STR is return line.upper; end;
+   exclaim(text : STR) : STR is return text + "!"; end;
 
    ...
 
-   part ::= bind(shout(_));
+   voice ::= bind(exclaim(_));
 ```
 
-`part` is now a value like any other. Calling it happens later:
+`voice` is now a value like any other. Calling it happens later:
 
 ```sather
-   part.call("who's there")      -- "WHO'S THERE"
+   voice.call("places everyone")      -- "places everyone!"
 ```
 
 ## The type
 
-The type of a bound routine is `ROUT`, with the argument types in braces and
-the return type after a colon:
+The type of a bound routine is `ROUT`, with the argument types in braces
+and the return type after a colon:
 
 ```sather
-   part : ROUT{STR}:STR := bind(shout(_));
+   voice : ROUT{STR}:STR := bind(exclaim(_));
 ```
 
 Read `ROUT{STR}:STR` as "a routine taking a `STR` and answering a `STR`".
@@ -46,28 +46,28 @@ Read `ROUT{STR}:STR` as "a routine taking a `STR` and answering a `STR`".
 Since it is a type, it can be an argument:
 
 ```sather
-   rehearse(line : STR, part : ROUT{STR}:STR) : STR is
-      return part.call(line);
+   announce(text : STR, voice : ROUT{STR}:STR) : STR is
+      return voice.call(text);
    end;
 ```
 
-`rehearse` has no idea what `part` does. That is the point: it can be handed
-`shout`, or `whisper`, or anything else of that shape.
+`announce` has no idea what `voice` does. That is the point: it can be
+handed `exclaim`, or anything else of that shape.
 
 ## Filling in some of the arguments
 
-Not every argument has to be a hole. Anything written out is fixed when the
-bind happens:
+Not every argument has to be a hole. Anything written out is fixed when
+the bind happens:
 
 ```sather
-   repeat(times : INT, line : STR) : STR is ... end;
+   print_run(copies : INT, page : STR) : STR is ... end;
 
-   twice ::= bind(repeat(2, _));      -- ROUT{STR}:STR
+   pair ::= bind(print_run(2, _));      -- ROUT{STR}:STR
 ```
 
-`twice` takes only the line, because the `2` is already decided. The value
-is worked out at the moment of binding and kept, so changing the variable it
-came from afterwards makes no difference.
+`pair` takes only the page, because the `2` is already decided. The value
+is worked out at the moment of binding and kept, so changing the variable
+it came from afterwards makes no difference.
 
 This is how one general routine becomes many specific ones.
 

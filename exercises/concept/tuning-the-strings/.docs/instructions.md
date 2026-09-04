@@ -46,8 +46,8 @@ TUNING_THE_STRINGS::beats_per_second(441.5d, 440.0d)
 ## 5. Sharing out practice
 
 Given a number of minutes and a number of players, how many minutes does
-each get? The minutes and the players are whole numbers, but the answer may
-not be.
+each get? The minutes and the players are whole numbers, but the answer
+may not be.
 
 ```sather
 TUNING_THE_STRINGS::minutes_each(45, 2)

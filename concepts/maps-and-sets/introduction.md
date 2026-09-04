@@ -5,8 +5,8 @@ not a number.
 
 ## Maps
 
-A **map** pairs each **key** with a **target**. Look something up by its key
-and the map gives you what was filed under it.
+A **map** pairs each **key** with a **target**. Look something up by its
+key, and the map gives you what was filed under it.
 
 `FMAP{K,T}` is a map from keys of type `K` to targets of type `T`. A guide
 pairing an animal's name with where it lives is `FMAP{STR,STR}`.
@@ -19,8 +19,8 @@ pairing an animal's name with where it lives is `FMAP{STR,STR}`.
 
 ## Always assign the answer back
 
-Look again at that middle line. `insert` answers the map with the extra pair
-in it, and the answer has to be kept:
+Look again at that middle line. `insert` answers the map with the extra
+pair in it, and the answer has to be kept:
 
 ```sather
    guide := guide.insert("emu", "grassland");     -- yes
@@ -28,10 +28,11 @@ in it, and the answer has to be kept:
 ```
 
 This is the same rule as `FSTR`, and for the same reason. The answer is
-usually the very map that went in, changed in place; occasionally, when the
-map has run out of room, it is a larger one. Since you cannot tell which,
-**use the answer and stop using the old name.** A name left over from before
-an `insert` may be out of date or may not describe a usable map at all.
+usually the very map that went in, changed in place; occasionally, when
+the map has run out of room, it is a larger one. Since you cannot tell
+which, **use the answer and stop using the old name.** A name left over
+from before an `insert` may be out of date, or may not describe a usable
+map at all.
 
 That also means a map handed to a routine is not safe from it. If the
 original has to survive, see `copy` on the concept page.

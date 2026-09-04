@@ -1,10 +1,10 @@
 # Classes with State
 
-Every class so far has been a box of routines. Each one took its arguments,
-worked out an answer and forgot everything.
+Every class so far has been a box of routines. Each one took its
+arguments, worked out an answer and forgot everything.
 
-A class can instead **remember** things. A scoreboard has to: the score now
-depends on every goal since the game started.
+A class can instead **remember** things. A scoreboard has to: the score
+now depends on every goal since the game started.
 
 ## Attributes
 
@@ -19,7 +19,8 @@ class SCOREBOARD is
 end; -- class SCOREBOARD
 ```
 
-Each `attr` becomes a routine that reads the value, and one that changes it:
+Each `attr` becomes a routine that reads the value, and one that changes
+it:
 
 ```sather
    board.home_score            -- read it
@@ -34,11 +35,11 @@ Attributes of the same type can share a declaration, as arguments can:
 
 ## Objects
 
-A class with attributes is a pattern for making **objects**. Each object has
-its own copies of the attributes, so two scoreboards keep two scores.
+A class with attributes is a pattern for making **objects**. Each object
+has its own copies of the attributes, so two scoreboards keep two scores.
 
-`new` makes an object. It goes inside a routine called `create`, which then
-fills the object in and hands it back:
+`new` makes an object. It goes inside a routine called `create`, which
+then fills the object in and hands it back:
 
 ```sather
    create(home, away : STR) : SAME is
@@ -60,12 +61,13 @@ thing, but `SAME` keeps working if the class is renamed.
    board ::= #SCOREBOARD("Vixens", "Magpies");
 ```
 
-You have been using `#` since `rehearsal-script` — `#FSTR` is exactly this.
+You have been using `#` since `rehearsal-script` — `#FSTR` is exactly
+this.
 
 ## Routines that change the object
 
-Inside the class, an attribute is used by name, with no object in front. It
-means the object the routine was called on.
+Inside the class, an attribute is used by name, with no object in front.
+It means the object the routine was called on.
 
 ```sather
    home_goal is
@@ -73,8 +75,8 @@ means the object the routine was called on.
    end;
 ```
 
-`home_goal` declares no return type, because it answers nothing — it changes
-the object instead. Call it as a statement:
+`home_goal` declares no return type, because it answers nothing — it
+changes the object instead. Call it as a statement:
 
 ```sather
    board.home_goal;
@@ -82,6 +84,6 @@ the object instead. Call it as a statement:
 
 ## Attributes start empty
 
-An attribute nobody has set holds nought for an `INT`, `false` for a `BOOL`,
-and void for a string or object. So a new scoreboard reads 0 to 0 without
-anything having to say so.
+An attribute nobody has set holds nought for an `INT`, `false` for a
+`BOOL`, and void for a string or object. So a new scoreboard reads 0 to 0
+without anything having to say so.

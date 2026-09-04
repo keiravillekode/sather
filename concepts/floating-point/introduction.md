@@ -7,8 +7,8 @@ remainder:
 7 / 2        -- 3, not 3.5
 ```
 
-When the fraction matters, the type is `FLTD` — a **floating-point** number,
-which can hold values between the whole ones.
+When the fraction matters, the type is `FLTD` — a **floating-point**
+number, which can hold values between the whole ones.
 
 ## Writing one
 
@@ -33,8 +33,8 @@ Write `2.0d`, not `2d` — there has to be a decimal point too.
 7.0d / 2.0d      -- 3.5
 ```
 
-Both sides have to be `FLTD`. Sather will not quietly mix the two types, so
-`7 / 2.0d` is an error rather than a surprise.
+Both sides have to be `FLTD`. Sather will not quietly mix the two types,
+so `7 / 2.0d` is an error rather than a surprise.
 
 ## From a whole number
 

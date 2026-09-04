@@ -2,10 +2,10 @@
 
 ## General
 
-- Each task compares one value against a fixed list, which is what `case` is
-  for.
-- Every `case` needs an `else`, even where the arms above it look complete.
-  Without one, a value that matches nothing stops the program.
+- Each task compares one value against a fixed list, which is what `case`
+  is for.
+- Every `case` needs an `else`, even where the arms above it look
+  complete. Without one, a value that matches nothing stops the program.
 
 ## 1. The fare for a zone
 

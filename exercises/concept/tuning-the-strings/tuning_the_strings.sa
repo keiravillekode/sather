@@ -1,5 +1,30 @@
 class TUNING_THE_STRINGS is
 
-   -- Write your routines between here and the end of the class.
+   -- Replace each placeholder body with the real one.
+
+   octave_up(hz : FLTD) : FLTD is
+      -- Return the frequency an octave higher.
+      return 0.0d;
+   end;
+
+   octave_down(hz : FLTD) : FLTD is
+      -- Return the frequency an octave lower.
+      return 0.0d;
+   end;
+
+   midpoint(low, high : FLTD) : FLTD is
+      -- Return the frequency halfway between the two.
+      return 0.0d;
+   end;
+
+   beats_per_second(played, target : FLTD) : FLTD is
+      -- Return how far apart the two frequencies are. Never negative.
+      return 0.0d;
+   end;
+
+   minutes_each(minutes, players : INT) : FLTD is
+      -- Return the practice minutes each player gets.
+      return 0.0d;
+   end;
 
 end; -- class TUNING_THE_STRINGS

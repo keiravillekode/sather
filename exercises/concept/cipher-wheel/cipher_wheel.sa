@@ -1,5 +1,30 @@
 class CIPHER_WHEEL is
 
-   -- Write your routines between here and the end of the class.
+   -- Replace each placeholder body with the real one.
+
+   is_letter(c : CHAR) : BOOL is
+      -- Is this character a letter?
+      return false;
+   end;
+
+   shout(c : CHAR) : CHAR is
+      -- Return the character in upper case.
+      return ' ';
+   end;
+
+   code(c : CHAR) : INT is
+      -- Return the character's code number.
+      return 0;
+   end;
+
+   first_character(word : STR) : CHAR is
+      -- Return the first character of the word.
+      return ' ';
+   end;
+
+   turn(c : CHAR, places : INT) : CHAR is
+      -- Turn a lower-case letter that many places round the wheel.
+      return ' ';
+   end;
 
 end; -- class CIPHER_WHEEL

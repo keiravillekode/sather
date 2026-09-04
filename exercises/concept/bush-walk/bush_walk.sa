@@ -1,6 +1,26 @@
 class BUSH_WALK is
 
-   -- Write your iterators between here and the end of the class.
-   -- Every one of them has a name ending in "!".
+   -- Each of these placeholders quits at once, giving nothing.
+   -- Replace each `quit;' with a loop that yields.
+
+   markers!(once spacing : INT, once count : INT) : INT is
+      -- Give the distance of each of `count' markers, `spacing' apart.
+      quit;
+   end;
+
+   until_end!(once seen : ARRAY{STR}) : STR is
+      -- Give each sighting in turn, stopping at "end".
+      quit;
+   end;
+
+   birds!(once seen : ARRAY{STR}) : STR is
+      -- Give only the sightings that start with a capital letter.
+      quit;
+   end;
+
+   numbered!(once seen : ARRAY{STR}) : STR is
+      -- Give each sighting with its position in front, counting from one.
+      quit;
+   end;
 
 end; -- class BUSH_WALK

@@ -1,5 +1,25 @@
 class TRAM_FARES is
 
-   -- Write your routines between here and the end of the class.
+   -- Replace each placeholder body with the real one.
+
+   zone_fare(zone : INT) : INT is
+      -- Return the fare in cents for the given zone.
+      return 0;
+   end;
+
+   ticket_kind(code : CHAR) : STR is
+      -- Return the kind of ticket the letter stands for.
+      return "";
+   end;
+
+   day_type(day : STR) : STR is
+      -- Return "Weekday", "Weekend" or "Unknown" for the given day.
+      return "";
+   end;
+
+   daily_cap(day : STR) : INT is
+      -- Return the daily cap in cents for the given day.
+      return 0;
+   end;
 
 end; -- class TRAM_FARES

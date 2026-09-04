@@ -1,14 +1,14 @@
 # Instructions
 
-The stage manager wants the rehearsal script typed up, and several parts of
-it are built by repeating or joining things together.
+The stage manager wants the rehearsal script typed up, and several parts
+of it are built by repeating or joining things together.
 
 All four tasks go in the `REHEARSAL_SCRIPT` class.
 
 ## 1. Repeat a cue
 
-Given a cue and a number, return the cue that many times over, with nothing
-between.
+Given a cue and a number, return the cue that many times over, with
+nothing between.
 
 ```sather
 REHEARSAL_SCRIPT::repeat_cue("Ha", 3)

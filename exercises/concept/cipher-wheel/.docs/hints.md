@@ -26,7 +26,8 @@
 
 - Three steps: work out how far along the alphabet the letter is, move it,
   then turn the answer back into a letter.
-- How far along: `c.int - 'a'.int`. For `'a'` that is 0.
-- Coming back round is `% 26`, which keeps the answer between 0 and 25.
-- Back into a letter: add `'a'.int` and use `.char`.
+- How far along: subtract `'a'.int`, as the introduction shows. For `'a'`
+  that is 0.
+- Coming back round is `%`, which keeps the answer between 0 and 25.
+- Back into a letter: add `'a'.int` on again and use `.char`.
 - Write `'a'.int` rather than `97`. It says why the number is there.

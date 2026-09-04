@@ -2,9 +2,10 @@
 
 ## 1. How many line-ups?
 
-- `#INTI(n).factorial` does the whole job.
-- Check what it gives for nought before writing anything special: factorial
-  of nought is one, which is the answer the task asks for.
+- `INTI` has a `.factorial`, and the introduction shows how to make an
+  `INTI` from an `INT`.
+- Check what it gives for nought before writing anything special:
+  factorial of nought is one, which is the answer the task asks for.
 
 ## 2. Write it out
 
@@ -23,6 +24,6 @@
 ## 5. Does it fill the show?
 
 - Compare with `#RAT(1)`, or with `#RAT(1, 1)`. Both are the number one.
-- `=` on two `RAT`s compares the fractions, so this is a single comparison —
-  no `if` and no converting to `FLTD`. Converting would reintroduce exactly
-  the rounding this type exists to avoid.
+- `=` on two `RAT`s compares the fractions, so this is a single
+  comparison — no `if` and no converting to `FLTD`. Converting would
+  reintroduce exactly the rounding this type exists to avoid.

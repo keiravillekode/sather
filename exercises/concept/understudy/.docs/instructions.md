@@ -1,7 +1,8 @@
 # Instructions
 
 Every part in the school play has an understudy: somebody who can step in
-and do what the part needs, without the stage manager knowing who they are.
+and do what the part needs, without the stage manager knowing who they
+are.
 
 All five tasks go in the `UNDERSTUDY` class. The first two are ordinary
 routines that later tasks will bind.
@@ -20,8 +21,8 @@ UNDERSTUDY::whisper("Who's There")
 
 ## 2. Rehearse a line
 
-`rehearse` takes a line and a way of saying it, and returns the result. Its
-second argument has type `ROUT{STR}:STR`.
+`rehearse` takes a line and a way of saying it, and returns the result.
+Its second argument has type `ROUT{STR}:STR`.
 
 ```sather
 UNDERSTUDY::rehearse("who's there", bind(UNDERSTUDY::shout(_)))
@@ -62,9 +63,9 @@ UNDERSTUDY::repeat(3, "Ha")
 -- => "HaHaHa"
 ```
 
-Then write `doubler`, which takes no arguments and returns a `ROUT{STR}:STR`
-that repeats whatever it is given twice — by binding `repeat` with the
-number already filled in.
+Then write `doubler`, which takes no arguments and returns a
+`ROUT{STR}:STR` that repeats whatever it is given twice — by binding
+`repeat` with the number already filled in.
 
 ```sather
 UNDERSTUDY::doubler.call("Ha")

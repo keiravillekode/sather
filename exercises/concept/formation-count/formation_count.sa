@@ -1,5 +1,30 @@
 class FORMATION_COUNT is
 
-   -- Write your routines between here and the end of the class.
+   -- Replace each placeholder body with the real one.
+
+   line_ups(dancers : INT) : INTI is
+      -- Return how many ways the dancers can line up.
+      return #INTI(0);
+   end;
+
+   line_ups_text(dancers : INT) : STR is
+      -- Return that same count, written out.
+      return "";
+   end;
+
+   share(acts : INT) : RAT is
+      -- Return the share of the show each act gets, as a fraction.
+      return #RAT(0);
+   end;
+
+   combined(first, second : RAT) : RAT is
+      -- Return the two shares added together, exactly.
+      return #RAT(0);
+   end;
+
+   covers_whole_show(part : RAT) : BOOL is
+      -- Is this share the whole show?
+      return false;
+   end;
 
 end; -- class FORMATION_COUNT

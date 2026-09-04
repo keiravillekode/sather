@@ -11,8 +11,8 @@
 
 - Call both iterators, then add one to a counter. There is nothing else to
   do with the values.
-- The loop already ends when the shorter part runs out, so no comparison of
-  sizes is needed.
+- The loop already ends when the shorter part runs out, so no comparison
+  of sizes is needed.
 
 ## 2. How many bars match?
 
@@ -20,7 +20,7 @@
 
 ## 3. Who is busier?
 
-- The same shape as task 2 with `>` instead of `=`. Note the order: the
+- The same shape as task 2, with `>` instead of `=`. Note the order: the
   first part having more.
 
 ## 4. Weight the bars

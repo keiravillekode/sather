@@ -47,7 +47,7 @@ harness_on and rope_checked
 mat_below or net_below
 ```
 
-`~` flips an answer over: it turns true into false and false into true.
+`~` flips an answer over: it turns true into false, and false into true.
 
 ```sather
 ~ready       -- true exactly when ready is false

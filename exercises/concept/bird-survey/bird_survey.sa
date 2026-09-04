@@ -1,5 +1,30 @@
 class BIRD_SURVEY is
 
-   -- Write your routines between here and the end of the class.
+   -- Replace each placeholder body with the real one.
+
+   total_seen(counts : ARRAY{INT}) : INT is
+      -- Return the sum of every day's count.
+      return 0;
+   end;
+
+   busiest_day(counts : ARRAY{INT}) : INT is
+      -- Return the largest count, or nought if there were no days.
+      return 0;
+   end;
+
+   days_over(counts : ARRAY{INT}, than : INT) : INT is
+      -- Return how many days had a count above `than'.
+      return 0;
+   end;
+
+   hides_to_check(days : INT) : INT is
+      -- Return 1 + 2 + ... + `days', the number of hide checks.
+      return 0;
+   end;
+
+   first_busy_day(counts : ARRAY{INT}, than : INT) : INT is
+      -- Return the first day with a count above `than', or -1.
+      return 0;
+   end;
 
 end; -- class BIRD_SURVEY

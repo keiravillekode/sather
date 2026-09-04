@@ -9,12 +9,13 @@
 
 ## 1. The verdict
 
-- Three bands, so two questions: eight or more, then five or more,
-  then everything left over.
+- Three bands, so two questions: eight or more, then five or more, then
+  everything left over.
 
 ## 2. Which group?
 
-- Working upwards is easiest: under 13 first, then under 16, then the rest.
+- Working upwards is easiest: under 13 first, then under 16, then the
+  rest.
 - "From 13 to 15" and "under 16" describe the same performers, and the
   second is one comparison instead of two.
 
@@ -26,7 +27,7 @@
 
 ## 4. What to write on the sheet
 
-- The first case needs two things at once, so join them with `and`:
-  `if score >= 8 and sings then`.
+- The first case needs two things at once — a high score and singing — so
+  join the two questions with `and`.
 - The second case is reached only when the first has already failed, so it
   does not need to ask about singing again.

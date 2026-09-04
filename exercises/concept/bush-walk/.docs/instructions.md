@@ -1,15 +1,15 @@
 # Instructions
 
-You are marking out a walking track through the bush. The distances and the
-sightings both come as sequences, so both are iterators.
+You are marking out a walking track through the bush. The distances and
+the sightings both come as sequences, so both are iterators.
 
 All four go in the `BUSH_WALK` class. Every one of them is an iterator, so
 every name ends in `!`.
 
 ## 1. The markers
 
-`markers!` takes a spacing in metres and a count, and gives the distance of
-each marker from the start.
+`markers!` takes a spacing in metres and a count, and gives the distance
+of each marker from the start.
 
 ```sather
 loop
@@ -36,8 +36,8 @@ If there is no `"end"`, it gives everything.
 
 ## 3. Only the birds
 
-`birds!` takes the sightings and gives only those that start with a capital
-letter, which is how this survey writes birds down.
+`birds!` takes the sightings and gives only those that start with a
+capital letter, which is how this survey writes birds down.
 
 ```sather
 loop

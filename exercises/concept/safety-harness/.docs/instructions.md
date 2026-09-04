@@ -3,9 +3,9 @@
 Every harness at the circus is rated for a load in kilograms, and nobody
 goes up until the numbers have been checked.
 
-The `SAFETY_HARNESS` class needs the following. The stub gives you the class
-and its attribute; add the rest. Every routine below carries a contract, and
-the hints say which.
+All four tasks go in the `SAFETY_HARNESS` class. The stub declares the
+attribute and each routine; your work is the bodies **and the contracts**.
+Every routine below carries a contract, and the hints say which.
 
 ## 1. Rig a harness
 
@@ -20,9 +20,9 @@ harness.limit
 
 ## 2. How much is spare?
 
-`spare_capacity` takes the load on the harness and returns how much more it
-could take. The load may not be negative, and may not be over the limit —
-both `pre`. The answer is never negative, which is a `post`.
+`spare_capacity` takes the load on the harness and returns how much more
+it could take. The load may not be negative, and may not be over the
+limit — both `pre`. The answer is never negative, which is a `post`.
 
 ```sather
 harness.spare_capacity(40)
@@ -43,9 +43,9 @@ harness.percent_used(60)
 ## 4. Is it safe?
 
 `is_safe` takes the load and answers whether it is within the limit. Any
-load at all may be asked about, including a silly one, so there is no `pre`
-on the load — but write a `post` saying the answer is true exactly when the
-load is within the limit.
+load at all may be asked about, including a silly one, so there is no
+`pre` on the load — but write a `post` saying the answer is true exactly
+when the load is within the limit.
 
 ```sather
 harness.is_safe(200)

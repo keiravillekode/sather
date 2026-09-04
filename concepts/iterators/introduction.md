@@ -21,9 +21,9 @@ numbers up. An **iterator** does all three.
    end;
 ```
 
-`elt!` hands over one element each time round, and ends the loop when there
-are no more. No counter, nothing to get wrong, and no way to run off the
-end of the array.
+`elt!` hands over one element each time round, and ends the loop when
+there are no more. No counter, nothing to get wrong, and no way to run off
+the end of the array.
 
 ## The exclamation mark
 
@@ -31,9 +31,9 @@ The `!` marks an iterator. You have met three already — `until!`, `while!`
 and `break!` — and they follow the same rule: **an iterator may only be
 called inside a loop.** Writing `counts.elt!` outside one is an error.
 
-An iterator called inside a loop is asked for a value each time round. When
-it has none left, the loop ends immediately, wherever in the body the call
-happens to be.
+An iterator called inside a loop is asked for a value each time round.
+When it has none left, the loop ends immediately, wherever in the body the
+call happens to be.
 
 ## Two to start with
 
@@ -58,8 +58,8 @@ with a dot, on an array or on a number.
 
 ## Keeping the answer
 
-The loop ends by itself, so anything worked out inside it has to be kept in
-a variable declared **outside** — otherwise it disappears when the loop
+The loop ends by itself, so anything worked out inside it has to be kept
+in a variable declared **outside** — otherwise it disappears when the loop
 does.
 
 ```sather

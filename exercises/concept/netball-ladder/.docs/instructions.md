@@ -24,8 +24,8 @@ NETBALL_LADDER::goal_difference(180, 205)
 
 ## 3. Whole quarters played
 
-A quarter is 15 minutes. Given a number of minutes, how many whole quarters
-is that?
+A quarter is 15 minutes. Given a number of minutes, how many whole
+quarters is that?
 
 ```sather
 NETBALL_LADDER::whole_quarters(38)

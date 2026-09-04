@@ -7,8 +7,8 @@ All three tasks go in the `MISSING_PROPS` class.
 
 ## 1. How many have we got?
 
-Return how many of a prop there are. If the prop is not on the table at all,
-raise the string `"Unknown prop: "` followed by its name.
+Return how many of a prop there are. If the prop is not on the table at
+all, raise the string `"Unknown prop: "` followed by its name.
 
 ```sather
 MISSING_PROPS::count_of(props, "crown")
@@ -35,7 +35,8 @@ MISSING_PROPS::take_one(props, "lantern")
 ```
 
 A prop that is not on the table at all should still raise
-`"Unknown prop: ..."`, and you should not have to write that message twice.
+`"Unknown prop: ..."`, and you should not have to write that message
+twice.
 
 ## 3. Report back
 

@@ -6,4 +6,46 @@ class WARM_UP is
 
 end; -- class WARM_UP
 
--- Write JAZZ_ROUTINE, TAP_ROUTINE and FINALE below.
+-- The routines below are placeholders so that everything compiles.
+-- Each class is really written with `include'; the placeholders go
+-- when the include arrives.
+
+class JAZZ_ROUTINE is
+
+   counts : INT is
+      return 0;
+   end;
+
+   describe : STR is
+      return "";
+   end;
+
+end; -- class JAZZ_ROUTINE
+
+class TAP_ROUTINE is
+
+   counts : INT is
+      return 0;
+   end;
+
+   describe : STR is
+      return "";
+   end;
+
+end; -- class TAP_ROUTINE
+
+class FINALE is
+
+   warm_up_counts : INT is
+      return 0;
+   end;
+
+   counts : INT is
+      return 0;
+   end;
+
+   describe : STR is
+      return "";
+   end;
+
+end; -- class FINALE

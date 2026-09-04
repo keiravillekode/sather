@@ -20,13 +20,13 @@ routine name:
    end;
 ```
 
-When two arguments have the same type you may name them together:
+When two arguments have the same type, they may be named together:
 
 ```sather
    total(first, second : INT) : INT is
 ```
 
-Call it by putting the values in brackets:
+Call the routine by putting values in the brackets:
 
 ```sather
 SCORES::total(3, 4)     -- this is 7
@@ -47,4 +47,4 @@ rather than giving a fraction.
 7 % 2      -- 1
 ```
 
-The two go together: `7` is `3` lots of `2` with `1` left over.
+The two go together: `7` is `3` lots of `2`, with `1` left over.

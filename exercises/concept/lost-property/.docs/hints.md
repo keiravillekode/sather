@@ -9,9 +9,10 @@
 
 ## 1. Take something in
 
-- Three attributes: the item, whose it is, and whether it has been claimed.
-  The item's type is `T`; the other two are `STR` and `BOOL`.
-- `claimed` starts false without being set. A `BOOL` attribute starts false.
+- The stub declares the three attributes: the item, whose it is, and
+  whether it has been claimed. `create` sets the first two from its
+  arguments.
+- `claimed` needs no setting. A `BOOL` attribute starts false.
 
 ## 2. Claim it
 
@@ -19,7 +20,7 @@
 
 ## 3. Is it still waiting?
 
-- `~claimed`. No `if` needed.
+- The opposite of `claimed`, and `~` flips an answer over. No `if` needed.
 
 ## 4. Swap the contents
 
@@ -30,6 +31,6 @@
 ## 5. Write it up
 
 - Change the class header to `class LOST_BOX{T < $STR}`.
-- Without that, `item.str` does not compile, because nothing is known about
-  a bare `T` beyond being able to move it about.
+- Without that, `item.str` does not compile, because nothing is known
+  about a bare `T` beyond being able to move it about.
 - The item comes first in the line, so start the join with `item.str`.

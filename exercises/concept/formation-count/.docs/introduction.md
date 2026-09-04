@@ -2,12 +2,12 @@
 
 Two of the number types you have met give up something.
 
-`INT` is exactly 32 bits, so it holds numbers from about minus two thousand
-million to two thousand million and no further. Go past that and it wraps
-round silently — no error, just a wrong answer.
+`INT` is exactly 32 bits, so it holds numbers from about minus two
+thousand million to two thousand million and no further. Go past that and
+it wraps round silently — no error, just a wrong answer.
 
-`FLTD` holds fractions, but only approximately. `0.1d + 0.2d` is very nearly
-`0.3` and not exactly.
+`FLTD` holds fractions, but only approximately. `0.1d + 0.2d` is very
+nearly `0.3` and not exactly.
 
 For work where those matter, the library has a type each.
 
@@ -34,13 +34,13 @@ write as an `INT` in the first place:
 Then `+`, `-`, `*`, `/` and comparison all work as usual, and `.str` gives
 every digit.
 
-Counting the ways a troupe can line up is the standard reason to want this.
-Twelve dancers have 479001600 ways, which an `INT` holds; thirteen have
-6227020800, which it does not.
+Counting arrangements is the standard reason to want this. A shuffled deck
+of cards can come out in `52` factorial different orders — a number of 68
+digits, which nothing else here could hold exactly:
 
 ```sather
-   #INTI(20).factorial
-   -- 2432902008176640000
+   #INTI(52).factorial
+   -- 80658175170943878571660636856403766975289505440883277824000000000000
 ```
 
 ## RAT: exact fractions
@@ -60,14 +60,14 @@ No rounding happens, because nothing is ever converted to a decimal.
    0.1d + 0.2d = 0.3d                            -- not to be relied on
 ```
 
-A `RAT` reduces itself: `#RAT(2, 4)` is `1/2`, and prints as `1/2`. One that
-comes out whole prints as a whole number: `#RAT(6, 3)` prints `2`.
+A `RAT` reduces itself: `#RAT(2, 4)` is `1/2`, and prints as `1/2`. One
+that comes out whole prints as a whole number: `#RAT(6, 3)` prints `2`.
 
 ## The cost
 
-Both are slower than the built-in types, and both allocate memory. `INT` and
-`FLTD` are single machine instructions; `INTI` and `RAT` are objects doing
-arithmetic in software.
+Both are slower than the built-in types, and both allocate memory. `INT`
+and `FLTD` are single machine instructions; `INTI` and `RAT` are objects
+doing arithmetic in software.
 
 Use them where exactness is the point, and the ordinary types everywhere
 else.

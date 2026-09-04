@@ -1,7 +1,7 @@
 # Lists
 
-An `ARRAY` is fixed. It is made at one size and stays that size: there is no
-appending to one, and no removing from one.
+An `ARRAY` is fixed. It is made at one size and stays that size: there is
+no appending to one, and no removing from one.
 
 A detective's notebook is not like that. Clues turn up one at a time, and
 get struck out when they are ruled out. For that you want a **list**.
@@ -21,13 +21,13 @@ shrinks as you ask it to.
 `append` changes the list it is called on and answers nothing:
 
 ```sather
-   notes.append("muddy boots");        -- yes
-   notes := notes.append("muddy boots");   -- no: append answers nothing
+   notes.append("muddy boots");             -- yes
+   notes := notes.append("muddy boots");    -- no: append answers nothing
 ```
 
 This is different from `FMAP` and `FSET`, where every change had to be
-assigned back. A `LIST` is an ordinary object, like a `SCOREBOARD`: hand it
-to a routine and the routine can change yours.
+assigned back. A `LIST` is an ordinary object, like a `SCOREBOARD`: hand
+it to a routine and the routine can change yours.
 
 ## Reading and writing
 

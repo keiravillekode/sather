@@ -1,11 +1,11 @@
 # Contracts
 
 A routine's arguments and return type say what *kind* of thing goes in and
-comes out. They cannot say that a weight must be positive, or that a harness
-never reports more spare capacity than it has.
+comes out. They cannot say that a weight must be positive, or that a
+harness never reports more spare capacity than it has.
 
-A **contract** says those things, in the routine's own header, where anybody
-reading it will see them.
+A **contract** says those things, in the routine's own header, where
+anybody reading it will see them.
 
 ## pre
 
@@ -47,18 +47,18 @@ Several conditions join with `and`, as any booleans do:
 
 ## Contracts are not exceptions
 
-A raised exception is for something that can happen. A broken contract means
-a **bug** — somebody called the routine wrongly, or the routine did not do
-what it said.
+A raised exception is for something that can happen. A broken contract
+means a **bug** — somebody called the routine wrongly, or the routine did
+not do what it said.
 
 So a broken contract does not raise something catchable. When contract
 checking is switched on, the program stops and prints which routine, and
-which condition. When it is switched off, the condition is not even tested,
-and the program runs on into whatever nonsense follows.
+which condition. When it is switched off, the condition is not even
+tested, and the program runs on into whatever nonsense follows.
 
-That is why a contract is a statement about correctness rather than a way of
-handling bad input. If bad input is expected, check it and `raise`. If bad
-input means the caller is broken, say so with `pre`.
+That is why a contract is a statement about correctness rather than a way
+of handling bad input. If bad input is expected, check it and `raise`. If
+bad input means the caller is broken, say so with `pre`.
 
 ## Switching checking on
 

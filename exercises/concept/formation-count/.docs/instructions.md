@@ -1,15 +1,16 @@
 # Instructions
 
 The dance troupe is working out its end-of-year show: how many ways the
-dancers can be arranged, and how the running time divides between the acts.
+dancers can be arranged, and how the running time divides between the
+acts.
 
 All five tasks go in the `FORMATION_COUNT` class.
 
 ## 1. How many line-ups?
 
 With `n` dancers there are `n` factorial ways to line them up: `n` choices
-for the front, then `n-1` for the next, and so on. Return that as an `INTI`.
-Nought dancers have exactly one line-up — the empty one.
+for the front, then `n-1` for the next, and so on. Return that as an
+`INTI`. Nought dancers have exactly one line-up — the empty one.
 
 ```sather
 FORMATION_COUNT::line_ups(5)

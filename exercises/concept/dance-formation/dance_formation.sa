@@ -1,5 +1,30 @@
 class DANCE_FORMATION is
 
-   -- Write your routines between here and the end of the class.
+   -- Replace each placeholder body with the real one.
+
+   dancer_count(row : ARRAY{STR}) : INT is
+      -- Return how many dancers are in the row.
+      return 0;
+   end;
+
+   leader(row : ARRAY{STR}) : STR is
+      -- Return the dancer at the front of the row.
+      return "";
+   end;
+
+   back_marker(row : ARRAY{STR}) : STR is
+      -- Return the dancer at the back of the row.
+      return "";
+   end;
+
+   opening_row : ARRAY{STR} is
+      -- Return the opening row: Mia, Ana and Ben, in that order.
+      return #ARRAY{STR}(3);
+   end;
+
+   total_steps(steps : ARRAY{INT}) : INT is
+      -- Return the sum of all the steps.
+      return 0;
+   end;
 
 end; -- class DANCE_FORMATION

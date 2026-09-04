@@ -1,5 +1,25 @@
 class CASTING_CALL is
 
-   -- Write your routines between here and the end of the class.
+   -- Replace each placeholder body with the real one.
+
+   audition_outcome(score : INT) : STR is
+      -- Return "Cast", "Recalled" or "Thank you", depending on the score.
+      return "";
+   end;
+
+   age_group(age : INT) : STR is
+      -- Return "Juniors", "Middles" or "Seniors", depending on the age.
+      return "";
+   end;
+
+   callback_time(group : STR) : STR is
+      -- Return the callback time for the given age group.
+      return "";
+   end;
+
+   casting_note(score : INT, sings : BOOL) : STR is
+      -- Return "Lead", "Speaking part" or "Chorus".
+      return "";
+   end;
 
 end; -- class CASTING_CALL

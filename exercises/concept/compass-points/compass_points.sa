@@ -2,7 +2,33 @@ immutable class BEARING is
 
    readonly attr degrees : INT;
 
-   -- Write create, turned, is_eq, point and str between here and the end
-   -- of the class.
+   -- Replace each placeholder body with the real one.
+
+   create(d : INT) : SAME is
+      -- Make a bearing, brought into the range 0 to 359.
+      b : SAME;
+      return b;
+   end;
+
+   turned(by : INT) : SAME is
+      -- Return a new bearing, turned that many degrees.
+      b : SAME;
+      return b;
+   end;
+
+   is_eq(other : SAME) : BOOL is
+      -- Are the two bearings the same?
+      return false;
+   end;
+
+   point : STR is
+      -- Return the nearest compass point, "N" through "NW".
+      return "";
+   end;
+
+   str : STR is
+      -- Return the bearing written out, such as "90 degrees (E)".
+      return "";
+   end;
 
 end; -- class BEARING

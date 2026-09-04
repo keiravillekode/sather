@@ -19,22 +19,22 @@ A loop nearly always needs a value that changes as it goes. That is a
    total ::= 0;
 ```
 
-The variable is called `total`, it starts at `0`, and Sather works out from
-the `0` that it holds an `INT`. After that, `:=` puts a new value in:
+The variable is called `total`, it starts at `0`, and Sather works out
+from the `0` that it holds an `INT`. After that, `:=` puts a new value in:
 
 ```sather
    total := total + 5;
 ```
 
-Read that right to left: take what `total` is now, add 5, and put the answer
-back into `total`.
+Read that right to left: take what `total` is now, add 5, and put the
+answer back into `total`.
 
 A variable made this way lives until the end of the routine.
 
 ## until!
 
-`until!` takes a question. Each time round it is asked, and when the answer
-is true the loop stops there and then.
+`until!` takes a question. Each time round the question is asked, and when
+the answer is true the loop stops there and then.
 
 ```sather
    sum_to(last : INT) : INT is
@@ -49,21 +49,21 @@ is true the loop stops there and then.
    end;
 ```
 
-`n` counts 1, 2, 3 ... and the loop ends the first time `n` is past `last`.
-Without the `n := n + 1` the question would never change its answer and the
-loop would run forever.
+`n` counts 1, 2, 3 ... and the loop ends the first time `n` is past
+`last`. Without the `n := n + 1` the question would never change its
+answer, and the loop would run forever.
 
-`until!` does not have to be the first line. Put it where the question makes
-sense: at the top, the loop may run no times at all; at the bottom, it
-always runs at least once.
+`until!` does not have to be the first line. Put it where the question
+makes sense: at the top, the loop may run no times at all; at the bottom,
+it always runs at least once.
 
-The `!` is part of the name. Sather marks certain things that way; what the
-mark means comes later.
+The `!` is part of the name. Sather marks certain things that way; what
+the mark means comes later.
 
 ## break!
 
-`break!` ends the loop immediately, with no question attached. It is useful
-when the reason to stop turns up in the middle of the work.
+`break!` ends the loop immediately, with no question attached. It is
+useful when the reason to stop turns up in the middle of the work.
 
 ```sather
    loop

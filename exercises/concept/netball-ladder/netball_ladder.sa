@@ -1,5 +1,25 @@
 class NETBALL_LADDER is
 
-   -- Write your routines between here and the end of the class.
+   -- Replace each placeholder body with the real one.
+
+   ladder_points(wins, draws : INT) : INT is
+      -- Return the ladder points: a win is worth 4 and a draw 2.
+      return 0;
+   end;
+
+   goal_difference(scored, conceded : INT) : INT is
+      -- Return goals scored minus goals let in. It may be negative.
+      return 0;
+   end;
+
+   whole_quarters(minutes : INT) : INT is
+      -- Return how many whole 15-minute quarters have been played.
+      return 0;
+   end;
+
+   minutes_into_quarter(minutes : INT) : INT is
+      -- Return how far into the current quarter we are.
+      return 0;
+   end;
 
 end; -- class NETBALL_LADDER

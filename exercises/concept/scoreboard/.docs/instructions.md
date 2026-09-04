@@ -1,15 +1,15 @@
 # Instructions
 
-You are running the scoreboard at a netball match. Unlike everything so far,
-a scoreboard has to remember what has happened.
+You are running the scoreboard at a netball match. Unlike everything so
+far, a scoreboard has to remember what has happened.
 
-The `SCOREBOARD` class needs the following. The stub gives you the class and
-its two attribute declarations; add the rest.
+All five tasks go in the `SCOREBOARD` class. The stub declares the four
+attributes and every routine; your work is in the bodies.
 
 ## 1. Set up the board
 
-`create` takes the home team's name and the away team's name, and hands back
-a scoreboard with both scores at nought.
+`create` takes the home team's name and the away team's name, and hands
+back a scoreboard with both scores at nought.
 
 ```sather
 board ::= #SCOREBOARD("Vixens", "Magpies");
@@ -19,8 +19,8 @@ board.home_score
 
 ## 2. Score a goal
 
-`home_goal` adds one to the home score, and `away_goal` adds one to the away
-score. Neither answers anything.
+`home_goal` adds one to the home score, and `away_goal` adds one to the
+away score. Neither answers anything.
 
 ```sather
 board.home_goal;
@@ -42,8 +42,8 @@ The spaces are exactly as shown, and the dash is a single `-`.
 
 ## 4. Who is winning?
 
-`leader` returns the name of the team ahead, or `"Draw"` when the scores are
-level.
+`leader` returns the name of the team ahead, or `"Draw"` when the scores
+are level.
 
 ```sather
 board.leader

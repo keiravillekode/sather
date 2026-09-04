@@ -1,5 +1,28 @@
 class CASE_NOTES is
 
-   -- Write your routines between here and the end of the class.
+   -- Replace each placeholder body with the real one.
+
+   new_case : LIST{STR} is
+      -- Return an empty list of clues.
+      return #LIST{STR};
+   end;
+
+   add_clue(notes : LIST{STR}, clue : STR) is
+      -- Add the clue to the end of the notes.
+   end;
+
+   clue_count(notes : LIST{STR}) : INT is
+      -- Return how many clues the notes hold.
+      return 0;
+   end;
+
+   rule_out(notes : LIST{STR}, position : INT) is
+      -- Remove the clue at that position.
+   end;
+
+   summary(notes : LIST{STR}) : STR is
+      -- Return the clues joined with "; ".
+      return "";
+   end;
 
 end; -- class CASE_NOTES

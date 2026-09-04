@@ -1,11 +1,12 @@
 # Instructions
 
-You are tramping in New Zealand and taking bearings off a compass. A bearing
-is a whole number of degrees, and it is a value: turning by 20 degrees does
-not change the bearing you took, it gives you a different one.
+You are tramping in New Zealand and taking bearings off a compass. A
+bearing is a whole number of degrees, and it is a value: turning by 20
+degrees does not change the bearing you took, it gives you a different
+one.
 
-Write an `immutable class BEARING`. The stub gives you the class header and
-its attribute.
+All five tasks go in the `immutable class BEARING`. The stub gives you the
+class header, its attribute, and each routine with a placeholder body.
 
 ## 1. Take a bearing
 
@@ -22,8 +23,8 @@ to 359, so anything outside comes back round: 370 is 10, and -10 is 350.
 ## 2. Turn
 
 `turned` takes a number of degrees to turn by and answers the new bearing.
-Turning by a negative number turns the other way. The bearing it was called
-on is unchanged.
+Turning by a negative number turns the other way. The bearing it was
+called on is unchanged.
 
 ```sather
 #BEARING(350).turned(20).degrees
@@ -32,8 +33,8 @@ on is unchanged.
 
 ## 3. Compare
 
-`is_eq` takes another bearing and answers whether they are the same. Once it
-exists, `=` works on bearings.
+`is_eq` takes another bearing and answers whether they are the same. Once
+it exists, `=` works on bearings.
 
 ```sather
 #BEARING(10) = #BEARING(370)
@@ -45,9 +46,10 @@ exists, `=` works on bearings.
 `point` answers the compass point the bearing is nearest to, as one of
 `"N"`, `"NE"`, `"E"`, `"SE"`, `"S"`, `"SW"`, `"W"`, `"NW"`.
 
-Each point covers 45 degrees, centred on its exact bearing: north runs from
-337.5 through 0 to 22.5, north-east from 22.5 to 67.5, and so on. Since
-bearings here are whole numbers, a bearing of 22 is `"N"` and 23 is `"NE"`.
+Each point covers 45 degrees, centred on its exact bearing: north runs
+from 337.5 through 0 to 22.5, north-east from 22.5 to 67.5, and so on.
+Since bearings here are whole numbers, a bearing of 22 is `"N"` and 23 is
+`"NE"`.
 
 ```sather
 #BEARING(0).point

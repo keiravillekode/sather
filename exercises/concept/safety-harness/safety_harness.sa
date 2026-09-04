@@ -2,8 +2,27 @@ class SAFETY_HARNESS is
 
    readonly attr limit : INT;
 
-   -- Write create, spare_capacity, percent_used and is_safe between here
-   -- and the end of the class. Each one carries a contract; the
-   -- instructions say which.
+   -- Replace each placeholder body with the real one, and give each
+   -- routine its contract; the instructions say which.
+
+   create(kg : INT) : SAME is
+      -- Make a harness rated for `kg' kilograms.
+      return new;
+   end;
+
+   spare_capacity(load : INT) : INT is
+      -- Return how much more the harness can take.
+      return 0;
+   end;
+
+   percent_used(load : INT) : INT is
+      -- Return how much of the limit the load uses, as whole percent.
+      return 0;
+   end;
+
+   is_safe(load : INT) : BOOL is
+      -- Is this load within the limit?
+      return false;
+   end;
 
 end; -- class SAFETY_HARNESS

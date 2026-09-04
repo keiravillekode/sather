@@ -1,5 +1,30 @@
 class SAFETY_CHECK is
 
-   -- Write your routines between here and the end of the class.
+   -- Replace each placeholder body with the real one.
+
+   mat_ready(mat_down, mat_clean : BOOL) : BOOL is
+      -- The mat is ready only when it is both down and clean.
+      return false;
+   end;
+
+   something_below(mat_below, net_below : BOOL) : BOOL is
+      -- There has to be a mat below, or a net below. Either will do.
+      return false;
+   end;
+
+   needs_briefing(briefed : BOOL) : BOOL is
+      -- Anybody who has not been briefed needs the briefing.
+      return false;
+   end;
+
+   old_enough(age : INT) : BOOL is
+      -- Trapeze is for performers of 13 and over.
+      return false;
+   end;
+
+   cleared(age : INT, briefed, mat_down, mat_clean : BOOL) : BOOL is
+      -- Old enough, briefed, and the mat is ready: then they may go up.
+      return false;
+   end;
 
 end; -- class SAFETY_CHECK
