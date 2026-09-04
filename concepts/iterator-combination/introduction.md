@@ -16,9 +16,8 @@ second with second.
 
 ## The rule that surprises everybody
 
-**The loop ends as soon as the *first* of its iterators runs out.**
-
-Not when the last one does. Not when all of them have. The first.
+**The loop ends as soon as the *first* of its iterators runs out** —
+not when the last one does, and not when all of them have.
 
 So if `violin_one` holds four bars and `violin_two` holds two, the loop
 above runs **twice**. The third and fourth bars of the first part are
@@ -26,12 +25,10 @@ never looked at, because by then the second part has nothing left to
 offer.
 
 That is usually exactly what is wanted — pairing things up only makes
-sense while there are pairs — but it has to be known rather than
-discovered.
+sense while there are pairs.
 
 ## Counting alongside
 
-An iterator that never runs out is useful precisely because of that rule.
 `up!` counts forever:
 
 ```sather
