@@ -49,8 +49,9 @@ numbers the values without ever deciding how far to count:
 `part.elt!` ends the loop; `1.up!` supplies the numbering. Neither has to
 know how long the part is.
 
-## Order does not matter
+## Once per turn
 
-The iterators are all asked once per turn, so it makes no difference which
-is written first. What matters is that each is asked exactly once —
-writing `part.elt!` twice in one turn takes two values instead of one.
+In loops like the ones above, where each iterator is asked once per turn
+with nothing in between, it makes no difference which is written first.
+What matters is that each is asked exactly once — writing `part.elt!`
+twice in one turn takes two values instead of one.
