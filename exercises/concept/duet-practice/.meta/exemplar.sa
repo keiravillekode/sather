@@ -1,5 +1,25 @@
 class DUET_PRACTICE is
 
-   -- Write your routines between here and the end of the class.
+   -- Replace each placeholder body with the real one.
+
+   bars_together(first, second : ARRAY{INT}) : INT is
+      -- Return how many bars the two parts play together.
+      return 0;
+   end;
+
+   in_unison(first, second : ARRAY{INT}) : INT is
+      -- Return how many of those bars have the same note count in both.
+      return 0;
+   end;
+
+   louder_bars(first, second : ARRAY{INT}) : INT is
+      -- Return how many bars the first part plays more notes than the second.
+      return 0;
+   end;
+
+   weighted_total(part : ARRAY{INT}) : INT is
+      -- Return the sum of each bar's notes times its position, from one.
+      return 0;
+   end;
 
 end; -- class DUET_PRACTICE
