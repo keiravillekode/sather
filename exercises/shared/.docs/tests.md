@@ -1,15 +1,16 @@
 # Tests
 
-<!-- TODO: write document
+Each exercise has three Sather files: your solution, its tests, and
+`exercism_test.sa`, which the tests use.
+For an exercise such as `leap`, compile them together and run the result:
 
-  This document should contain instructions on how to run the exercise's tests.
+```shell
+sacomp -chk *.sa -main LEAP_TEST -o leap_tests
+./leap_tests
+```
 
-  The instructions should be short and to the point.
+The `-main` class is the test file's name in capitals: `leap_test.sa` holds `LEAP_TEST`.
 
-  The docs/TESTS.md file can contain a more verbose description on how to run tests.
-
-  When a student downloads an exercise via the CLI, this file's contents are
-  included into the HELP.md file.
-
-  See https://exercism.org/docs/building/tracks/shared-files for more information.
--->
+Keep `-chk`.
+It turns on checking of `pre`, `post`, `assert` and class invariants, as well as array bounds and void access.
+The online test runner uses it, so without it your solution can pass locally and fail on the website.
